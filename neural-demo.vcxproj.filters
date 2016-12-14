@@ -33,7 +33,7 @@
     <ClCompile Include="lib\libconvert.cpp">
       <Filter>lib</Filter>
     </ClCompile>
-    <ClCompile Include="neural-model.cpp">
+    <ClCompile Include="neural-demo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
