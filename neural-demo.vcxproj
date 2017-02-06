@@ -147,7 +147,7 @@
   <ItemGroup>
     <ClCompile Include="ActiveFunctions.cpp" />
     <ClCompile Include="lib\libconvert.cpp" />
-    <ClCompile Include="neural-model.cpp" />
+    <ClCompile Include="neural-demo.cpp" />
     <ClCompile Include="NeuralNet.cpp" />
     <ClCompile Include="NeuralNode.cpp" />
     <ClCompile Include="NeuralLayer.cpp" />
