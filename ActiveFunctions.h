@@ -32,5 +32,7 @@ public:
     static double is(double x) { return x > 0.5 ? 1 : 0; }
     static double dis(double x) { return 1; }
 
+    static double relu(double x) { return x > 0 ? x : 0; }
+    static double drelu(double x) { return x > 0 ? 1 : 0; }
 };
 

@@ -25,17 +25,17 @@ void run_neural(int option)
     auto net = new NeuralNet();
 
     net->setLearnMode(NeuralNetLearnMode::Batch);
-    net->setWorkMode(NeuralNetWorkMode::Probability);
+    net->setWorkMode(NeuralNetWorkMode::Fit);
 
     net->readData("p.txt");
     if (option == 0)
-    { net->createByData(NeuralLayerMode::HaveConstNode, 3, 10); }
+    { net->createByData(NeuralLayerMode::HaveConstNode, 4, 20); }
     else
     { net->createByLoad("savep.txt"); }
 
-    net->setLearnSpeed(0.5);
+    net->setLearnSpeed(5e-3);
     net->selectTest();
-    net->train(int(1e7), 1e-3);
+    net->train(int(5e6), 1e-3);
     net->test();
     //net->outputBondWeight("savep.txt");
 

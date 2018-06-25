@@ -455,7 +455,7 @@ void NeuralNet::createByData(NeuralLayerMode layerMode /*= HaveConstNode*/, int 
         layer->createNodes(nodesPerLayer, Hidden);
         for (auto& node : layer->getNodeVector())
         {
-            node->setFunctions(ActiveFunctions::sigmoid, ActiveFunctions::dsigmoid);
+            node->setFunctions(ActiveFunctions::relu, ActiveFunctions::drelu);
         }
     }
 
